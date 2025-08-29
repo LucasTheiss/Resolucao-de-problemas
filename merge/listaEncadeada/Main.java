@@ -6,15 +6,15 @@ public class Main {
         Fila fila1 = new Fila();
         Fila fila2 = new Fila();
 
-        fila1.inserir(1);
-        fila1.inserir(3);
-        fila1.inserir(5);
-        fila1.inserir(8);
+        fila1.insere(1);
+        fila1.insere(3);
+        fila1.insere(5);
+        fila1.insere(8);
 
-        fila2.inserir(2);
-        fila2.inserir(3);
-        fila2.inserir(6);
-        fila2.inserir(7);
+        fila2.insere(2);
+        fila2.insere(3);
+        fila2.insere(6);
+        fila2.insere(7);
 
         System.out.println("\n\nMerge\n\n");
 

@@ -21,18 +21,18 @@ public class Merge {
 
         while (!fila1.vazia() && !fila2.vazia()){
             if (fila1.inicio.getInformacao() < fila2.inicio.getInformacao()){
-                filaResultado.inserir(fila1.remover());
+                filaResultado.insere(fila1.remove());
             } else {
-                filaResultado.inserir(fila2.remover());
+                filaResultado.insere(fila2.remove());
             }
         }
 
         while(!fila2.vazia()){
-            filaResultado.inserir(fila2.remover());
+            filaResultado.insere(fila2.remove());
         }
 
         while(!fila1.vazia()){
-            filaResultado.inserir(fila1.remover());
+            filaResultado.insere(fila1.remove());
         }
 
         // zera as listas por padronizacao

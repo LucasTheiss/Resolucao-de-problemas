@@ -23,7 +23,7 @@ public class Fila {
         array = new int[this.tamanho];
     }
 
-    public void inserir(int elemento){
+    public void insere(int elemento){
         if (cheia()){
             System.out.println("A fila esta cheia");
             return;
@@ -45,7 +45,7 @@ public class Fila {
         System.out.println("Adicionando " + elemento + " ao index " + ultimo);
     }
 
-    public Integer remover(){
+    public Integer remove(){
         if (vazia()){
             System.out.println("Lista vazia");
             return null;

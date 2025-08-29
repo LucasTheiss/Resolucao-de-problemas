@@ -10,7 +10,7 @@ public class Fila {
         ultimo = null;
     }
 
-    public void inserir(int elemento){
+    public void insere(int elemento){
         Node no = new Node();
         no.setInformacao(elemento);
 
@@ -25,7 +25,7 @@ public class Fila {
         System.out.println("Inserindo " + elemento + " no nó atual de endereco " + ultimo);
     }
 
-    public Integer remover(){
+    public Integer remove(){
         if (vazia()){
             System.out.println("Lista Vazia");
             return null;

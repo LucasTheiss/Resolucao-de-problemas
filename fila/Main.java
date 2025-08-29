@@ -14,7 +14,7 @@ public class Main {
             if (item == 0) {
                 break;
             }
-            fila.inserir(item);
+            fila.insere(item);
         }
         System.out.println("Fila Encadeada:");
         fila.imprime();

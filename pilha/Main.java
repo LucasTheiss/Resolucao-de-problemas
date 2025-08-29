@@ -14,7 +14,7 @@ public class Main {
             if (item == 0) {
                 break;
             }
-            pilha.inserir(item);
+            pilha.insere(item);
         }
         System.out.println("pilha Encadeada:");
         pilha.imprime();

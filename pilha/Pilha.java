@@ -9,12 +9,12 @@ public class Pilha {
         this.topo = null;
     }
 
-    public void inserir (int informacao){
+    public void insere(int informacao){
         topo = new Node(informacao, topo);
         System.out.println("Inserindo " + informacao + " no nó atual de endereço " + topo);
     }
 
-    public Integer remover(){
+    public Integer remove(){
         if (vazia()){
             System.out.println("Lista vazia");
             return null;
