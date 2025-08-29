@@ -1,4 +1,4 @@
-package merge.listaEncadeada;
+package merge.vetor;
 import fila.Fila;
 
 public class Main {
