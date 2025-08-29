@@ -1,5 +1,5 @@
 package merge.vetor;
-import fila.Fila;
+import filaVetor.Fila;
 
 public class Main {
     public static void main(String[] args) {

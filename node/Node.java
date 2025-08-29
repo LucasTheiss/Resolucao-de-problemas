@@ -8,6 +8,7 @@ public class Node {
         this.informacao = null;
         this.proximo = null;
     }
+
     public Node(int informacao, Node proximo){
         this.informacao = informacao;
         this.proximo = proximo;

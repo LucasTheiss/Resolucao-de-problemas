@@ -1,20 +1,21 @@
 package filaVetor;
 
-public class FilaVetor {
+public class Fila {
     public int ultimo;
     public int inicio;
     public int tamanho;
     public int capacidade;
     public int[] array;
 
-    public FilaVetor(){
+    public Fila(){
         ultimo = -1;
         inicio = -1;
         tamanho = 5;
         capacidade = 0;
         array = new int[tamanho];
     }
-    public FilaVetor(int tamanho){
+
+    public Fila(int tamanho){
         ultimo = -1;
         inicio = -1;
         capacidade = 0;

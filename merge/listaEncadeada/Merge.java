@@ -1,16 +1,10 @@
 package merge.listaEncadeada;
 
 import fila.Fila;
-import node.Node;
 
 public class Merge {
     public Fila fila1;
     public Fila fila2;
-
-    public Merge(){
-        this.fila1 = null;
-        this.fila2 = null;
-    }
 
     public Merge(Fila fila1, Fila fila2){
         this.fila1 = fila1;
@@ -33,13 +27,14 @@ public class Merge {
             }
         }
 
-        // verificacao para evitar erros de null pointer
-        if (filaResultado.vazia()){
-            filaResultado = fila2.vazia() ? fila1 : fila2;
-        } else {
-            // caso sobre algum elemento em alguma fila, aponta o ultimo do fila resultado para o inicio da fila com elementos faltantes
-            filaResultado.ultimo.setProximo(fila1.vazia() ? fila2.inicio : fila1.inicio);
+        while(!fila2.vazia()){
+            filaResultado.inserir(fila2.remover());
         }
+
+        while(!fila1.vazia()){
+            filaResultado.inserir(fila1.remover());
+        }
+
         // zera as listas por padronizacao
         fila1 = null;
         fila2 = null;
