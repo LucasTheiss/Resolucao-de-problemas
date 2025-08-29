@@ -14,13 +14,15 @@ public class Pilha {
         System.out.println("Inserindo " + informacao + " no nó atual de endereço " + topo);
     }
 
-    public void remover(){
+    public Integer remover(){
         if (vazia()){
             System.out.println("Lista vazia");
-            return;
+            return null;
         }
-        System.out.println("Removendo " + topo.getInformacao() + " do endereço " + topo);
+        int valor = topo.getInformacao();
+        System.out.println("Removendo " + valor + " do endereço " + topo);
         topo = topo.getProximo();
+        return valor;
     }
 
     public void imprime(){
